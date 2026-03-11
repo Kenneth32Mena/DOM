@@ -1,0 +1,83 @@
+/* Reseteo basico*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+:root{
+    --principal:#E8F6F1;
+    --secundario: #F5FFFF;
+    --fondo: #008000;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background-color: var(--fondo);
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    height: 8rem;
+    color: var(--principal);
+ }
+ header h2{
+    padding: 2rem;
+ }
+nav a {
+    text-decoration: none;
+    padding: 5rem;
+    color: inherit;
+}
+main{
+    display: flex;    
+    margin: 3rem;
+}
+.cards{
+    flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 80px;
+        justify-content: center;
+}
+.card{
+     display: flex;
+    flex-direction:column;
+    border: 1px solid black;
+    margin: 20px 20px 20px 40px;
+    width: 300px;
+    height: 330px;
+    border-radius: 5px;  
+    background-color: #F5F5F5;
+
+}
+.img-card {
+    display: flex;
+    justify-content: center;
+    padding: 20px
+}
+
+.head-card {
+    margin: 15px;
+    font-size: 18px;
+}
+
+.description-card {
+    margin: 15px;
+    font-size: 14px;
+}
+section{
+    margin: 3rem;
+    text-align: center;
+    & h3{
+        margin: 2rem;
+    }
+}
+
+
+footer{
+    background-color: var(--fondo);
+    color: var(--principal);
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    align-content: center;
+}
